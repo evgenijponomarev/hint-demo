@@ -18,11 +18,16 @@
   background: var(--strong-blue);
   color: var(--button-active);
 
-  &:active {
+  &:active:not(.button_disabled) {
     animation-duration: .2s;
     animation-iteration-count: 1;
     animation-name: button-scale;
     background: var(--button-active-bg);
+  }
+
+  &_disabled {
+    background: var(--light-silver);
+    cursor: not-allowed;
   }
 }
 

@@ -13,6 +13,10 @@ export default function InputItem(props: Props) {
         placeholder={props.placeholder}
         maxLength={props.maxLength}
         type={props.type}
+        value={props.value}
+        onChange={props.onChange}
+        onFocus={props.onFocus}
+        onBlur={props.onBlur}
       />
     </div>
   );

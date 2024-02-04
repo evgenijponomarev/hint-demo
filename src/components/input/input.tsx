@@ -4,20 +4,22 @@ import React from 'react';
 
 export type Props = {
   placeholder: string;
-  maxLength: number;
+  maxLength?: number;
   type: 'text' | 'password';
+  value: string;
+  onChange: (value: string) => void;
+  onFocus: (event: React.FocusEvent) => void;
+  onBlur: (value: React.FocusEvent) => void;
 };
 
 export default function Input(props: Props) {
-  const [value, setValue] = React.useState('');
-
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    props.onChange(event.target.value);
   };
 
   const className = ['input'];
 
-  if (value) {
+  if (props.value) {
     className.push('input_filled');
   }
 
@@ -27,8 +29,10 @@ export default function Input(props: Props) {
         type={props.type}
         placeholder=" "
         maxLength={props.maxLength}
-        value={value}
+        value={props.value}
         onChange={onChange}
+        onFocus={props.onFocus}
+        onBlur={props.onBlur}
       />
 
       <p className="input__placeholder">{props.placeholder}</p>
