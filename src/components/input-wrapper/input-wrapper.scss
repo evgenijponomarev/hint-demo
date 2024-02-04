@@ -1,0 +1,11 @@
+.input-wrapper {
+  grid-gap: 12px;
+  background-color: var(--main-gradient);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3,1fr);
+  max-width: 400px;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}

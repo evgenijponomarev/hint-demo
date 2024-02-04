@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 560px;
+  position: relative;
+
+  &__main {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    overflow-x: hidden;
+  }
+}

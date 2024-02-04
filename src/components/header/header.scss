@@ -1,0 +1,22 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: var(--pale-blue);
+  border-bottom: 1px solid var(--transparent-to-periwinkle);
+  height: 50px;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+
+  &__button-wrapper {
+    left: 28px;
+    position: absolute;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+  }
+}

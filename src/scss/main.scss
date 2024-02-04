@@ -1,0 +1,341 @@
+@import "./components.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: SF Pro Text;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+button,
+h4 {
+  font-size: 18px;
+}
+
+button {
+  line-height: 20px;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: initial;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  overflow: auto;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1;
+}
+
+.height-initial {
+  height: auto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg .weightGraphicPath {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 0;
+  animation: weightGraphicDashAnimation 2s both;
+}
+
+@-webkit-keyframes weightGraphicDashAnimation {
+  0% {
+    stroke-dashoffset: 500;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes weightGraphicDashAnimation {
+  0% {
+    stroke-dashoffset: 500;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+div[class^="divider"] {
+  font-family: SF Pro Text Regular, sans-serif;
+}
+
+* {
+  scrollbar-color: #cde8f9 #fff;
+  scrollbar-color: #cde8f9 var(--white);
+  scrollbar-width: auto;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cde8f9;
+  border: 3px solid #fff;
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  height: 20px;
+}
+
+#root {
+  height: 100%;
+}
+
+a,
+button,
+div,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --font-family-main: "SF Pro Text", sans-serif;
+  --stone-grey: #95959d;
+  --button-color: #121620;
+  --svg-blue: var(--strong-blue);
+  --pale-lavender: #dee5f9;
+  --pale-lavender-20: #dee5f9;
+  --orange: #ff9649;
+  --coral: #ff5c5d;
+  --rich-blue: #2b7cf6;
+  --bright-white: #fbfbfb;
+  --bright-red: #ff5758;
+  --light-gray: #d9d9d9;
+  --vivid-yellow: #ffc700;
+  --pale-gray: #c2cad8;
+  --pale-green: #75db9c;
+  --pale-cerulean: #82b7ef;
+  --greyish: #afafaf;
+  --vivid-green: #00ff38;
+  --dark-charcoal: #191f2d;
+  --blueish-gray: #6b76aa;
+  --violet: #9949ff;
+  --light-lavender: #c5c5d1;
+  --pale-pink: #fcd3df;
+  --cream-yellow: #fffbcd;
+  --pale-aqua: #c9fae6;
+  --pale-seafoam: #d3f1e1;
+  --pale-lilac: #dec6fe;
+  --pale-peach: #fdddc8;
+  --deep-charcoal: #1e1e1e;
+  --black: #000;
+  --bright-sea-green: #04a777;
+  --deep-cornflower-blue: #4663b7;
+  --charcoal-grey: #505051;
+  --pale-light-cerulean: #acd1ff;
+  --main-gradient: #fff;
+  --strong-blue: #066fde;
+  --strong-blue-text: #066fde;
+  --strong-blue-80: rgba(6, 111, 222, 0.8);
+  --midnight-black: #121620;
+  --footer-small-text: #121620;
+  --button-active: #fff;
+  --button-background: var(--pale-blue);
+  --button-active-bg: var(--strong-blue);
+  --slate-blue: #6b7baa;
+  --slate-blue-placeholder: #6b7baa;
+  --pale-blue: #eff2fd;
+  --pale-blue-input: #eff2fd;
+  --midnight-black-input: #121620;
+  --greyish-blue: #8e8e93;
+  --soft-blue: #4a567a;
+  --soft-blue-gray: #4a567a;
+  --soft-blue-periwinkle: #4a567a;
+  --gentle-blue: #9babd9;
+  --gentle-blue-svg: #9babd9;
+  --light-silver: #c7c7c7;
+  --light-silver-to-white: #c7c7c7;
+  --light-silver-to-lilac-blue: #c7c7c7;
+  --light-cornflower-blue: #c2ceee;
+  --white: #fff;
+  --dark-blue: #202b47;
+  --progress-line: #00a3ff;
+  --footer-shield: #b5c4ff;
+  --blue-color-text: #0066fd;
+  --black-color-text: #0066fd;
+  --transparent-to-gold: transparent;
+  --transparent-to-white: transparent;
+  --transparent-to-periwinkle: transparent;
+  --white-to-transparent: #fff;
+  --loader-background: rgba(16, 32, 77, 0.35);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/sf-pro-text-regular.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/sf-pro-text-medium.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  src: url(/fonts/sf-pro-text-semibold.woff2)
+    format("woff2");
+}
